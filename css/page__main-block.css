@@ -1,0 +1,256 @@
+.page__main-block {
+}
+.main-block {
+	margin-bottom: 180px;
+	position: relative;
+	padding: 200px 0 80px 0;
+	background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+
+}
+.main-block__container {
+	z-index: 22;
+	position: relative;
+}
+.main-block__body {
+	margin-bottom: 190px;
+}
+.body-main {
+	display: flex;
+}
+.body-main__content {
+	flex: 0 1 50%;
+	padding-right: 40px;
+	align-self: center;
+}
+.body-main__play {
+	font-weight: 700;
+	font-size: 14px;
+	display: inline-flex;
+	gap: 16px;
+	position: relative;
+	align-items: center;
+}
+
+.body-main__play:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.body-main__play::before {
+	content: "";
+	background: #FF3F3A url(../images/icons/play.svg) center no-repeat;
+	border-radius: 50%;
+	width: 52px;
+	height: 52px;
+	flex: 0 0 52px;
+	transition: background-color 0.3s ease 0s;
+}
+
+.body-main__play:hover::before{
+	background-color: #f01f18;
+}
+
+.body-main__play::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #FF3F3A;
+	border-radius: 50%;
+	width: 52px;
+	height: 52px;
+	flex: 0 0 52px;
+	opacity: 0.12;
+	transform: scale(1.6);
+	animation: play-circle 2s infinite ease;
+}
+
+@keyframes play-circle {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2.5);
+	}
+}
+
+.body-main__title {
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 83px;
+	letter-spacing: 1px;
+	color: #1E212C;
+	margin-bottom: 60px;
+}
+.body-main__actions {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.body-main__button {
+}
+.button {
+}
+.button--border {
+}
+.body-main__media {
+	flex: 0 0 50%;
+}
+.body-main__image {
+	max-width: 107.8%;
+	transform: translate(7.8%,0px);
+}
+
+
+.main-block__advantages {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+.advantages-main {
+}
+.advantages-main__item {
+}
+.item-advantages {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.item-advantages__number {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 60px;
+	color: #1E212C;
+}
+.item-advantages__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #1E212C;
+}
+.advantages-main__decoration {
+	border-radius: 50%;
+	height: 8px;
+	width: 8px;
+	flex: 0 0 8px;
+	background: #FF3F3A;
+}
+
+@media (max-width:1031px) {
+	.body-main__title {
+		font-size: 52px;
+	}
+
+	.body-main__play:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	.body-main__title {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width:861px) {
+	.body-main {
+		gap: 30px;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	
+	.body-main__actions {
+		justify-content: center;
+	}
+
+	.advantages-main {
+		flex-direction: column;
+	}
+
+	.body-main__content {
+		align-content: center;
+		padding-right: 0;
+	}
+}
+
+@media (max-width:461px) {
+	.main-block {
+		margin-bottom: 50px;
+	}
+
+	.body-main {
+		flex-direction: column-reverse;
+		margin-top: 300px;
+		gap: 30px;
+		
+	}
+
+	.body-main__content {
+		align-content: center;
+		padding-right: 0;
+	}
+
+	.body-main__actions {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.body-main__title {
+		font-size: 36px;
+	}
+
+}
+
+.main-block__decor {
+}
+.decor-main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.decor-main__item {
+	position: absolute;
+}
+.decor-main__item--1 {
+	background: url(../images/decoration/decor_1.svg) 0 0 no-repeat;
+	width: 96px;
+	height: 96px;
+	top: 12.3%;
+	left: 4.2%;
+}
+.decor-main__item--2 {
+	background: url(../images/decoration/decor_2.svg) 0 0 no-repeat;
+	width: 284px;
+	height: 284px;
+	bottom: -9.2%;
+	left: -5.8%;
+}
+.decor-main__item--3 {
+	background: url(../images/decoration/decor_3.svg) 0 0 no-repeat;
+	width: 88px;
+	height: 47px;
+	top: 45%;
+	left: 40.7%;
+}
+.decor-main__item--4 {
+	background: url(../images/decoration/decor_4.svg) 0 0 no-repeat;
+	width: 61px;
+	height: 61px;
+	bottom: 24.1%;
+	left: 38.1%;
+}
+.decor-main__item--5 {
+	background: url(../images/decoration/decor_5.svg) 0 0 no-repeat;
+	width: 110px;
+	height: 110px;
+	top: -1.1%;
+	right: 5%;
+}
+.decor-main__item--6 {
+	background: url(../images/decoration/decor_6.svg) 0 0 no-repeat;
+	width: 187px;
+	height: 137px;
+	bottom: 17.9%;
+	right: -1.5%;
+}
