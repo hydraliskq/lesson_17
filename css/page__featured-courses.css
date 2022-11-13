@@ -76,15 +76,32 @@
 }
 
 @media (max-width: 600px) {
+
+	.featured-courses__title {
+		font-size: 36px;
+	}
+
 	.course-teachers {
+		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
+		
+	}
+
+	.course-teachers__cards {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
 	}
 
 	.course-teachers__card {
+		align-items: center;
 		flex-wrap: wrap;
 		flex-direction: column;
-		flex: 0 1 100%;
+	}
+
+	.course-teachers__image {
+		padding-top: 15px;
+		max-width: 214px;
 	}
 }
 	
